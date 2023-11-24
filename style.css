@@ -1,0 +1,136 @@
+/* Importing the 'Poppins' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Global Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+    /* Setting the default font family */
+
+    background-color: rgba(237, 240, 242, 0.3);
+    /* Setting a light background color */
+
+    outline: none;
+    /* Removing default outline for focused elements */
+}
+
+/* Styling for the main container */
+.container {
+
+    height: 100vh;
+    /* Full height of the viewport */
+    
+    display: flex;
+    justify-content: center;
+    /* Centering content horizontally */
+    
+    align-items: center;
+    /* Centering content vertically */
+}
+
+/* Styling for the calculator */
+.calculator {
+    background-color: rgba(252, 252, 252, 1);
+    /* White background color */
+    
+    padding: 15px;
+    /* Padding around the calculator */
+    
+    border-radius: 30px;
+    /* Rounded corners */
+    
+    box-shadow: inset 5px 5px 12px #ffffff, -5px -5px 12px rgb rgba(0, 0, 0, 0.1);
+    /* Box shadow for a 3D effect */
+    
+    display: grid;
+    /* Using CSS grid for layout */
+    
+    grid-template-columns: repeat(4, 64px);
+    /* Creating 4 columns each with a width of 64px */
+}
+
+/* Styling for the input field */
+input {
+    grid-column: span 4;
+    /* Spanning all 4 columns */
+    
+    height: 64px;
+    /* Setting height */
+    
+    width: 240px;
+    /* Setting width */
+    
+    background-color: #ecf0f3;
+    /* Light blue background color */
+    
+    box-shadow: inset -5px -5px 12px #ffffff inset 5px 5px 12px rgba(0, 0, 0, 0.2);
+    /* Inner shadow for a 3D effect */
+    
+    border: none;
+    /* Removing borders */
+    
+    border-radius: 30px;
+    /* Rounded corners */
+    
+    color: red;
+    /* Setting text color */
+    
+    font-size: 32px;
+    /* Setting font size */
+    
+    font-weight: initial;
+    /* Resetting font weight to the default value */
+    
+    text-align: end;
+    /* Aligning text to the right */
+    
+    margin: auto;
+    /* Centering horizontally */
+    
+    margin-top: 30px;
+    /* Adding top margin */
+    
+    margin-bottom: 20px;
+    /* Adding bottom margin */
+    
+    padding: 20px;
+    /* Adding padding */
+}
+
+
+/* Styling for the calculator buttons */
+button {
+    height: 48px;
+    /* Setting height */
+
+    width: 48px;
+    /* Setting width */
+
+    margin: 10px;
+    /* Adding margin around buttons */
+
+    background-color: #ecf0f3;
+    /* Light blue background color */
+
+    box-shadow: -5px -5px 12px #ffffff 5px 5px 12px rgba(0, 0, 0, 0.2);
+    /* Box shadow for a 3D effect */
+
+    border: none;
+    /* Removing borders */
+
+    border-radius: 50%;
+    /* Making buttons circular */
+
+    color: red;
+    /* Setting text color */
+
+    font-size: 16px;
+    /* Setting font size */
+
+    font-weight: bold;
+    /* Setting font weight to bold */
+
+}
