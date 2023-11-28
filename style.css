@@ -127,6 +127,9 @@ button {
     color: red;
     /* Setting text color */
 
+    cursor: pointer;
+    /* setting the cursor to pointer while hovering. */
+
     font-size: 16px;
     /* Setting font size */
 
